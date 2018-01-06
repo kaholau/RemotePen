@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Base.TextAppearance.AppCompat.Large">
+
+    <include
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/input_page_title"
+        android:id="@+id/input_title"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:layout_marginLeft="15sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle"
+        android:layout_weight="1">
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/text_input_field"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:textSize="28sp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_button"
+        android:id="@+id/send_button"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

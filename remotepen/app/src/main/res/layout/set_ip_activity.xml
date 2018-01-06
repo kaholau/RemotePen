@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10sp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="IP"
+                android:id="@+id/ip_field_title"
+                android:layout_weight="1"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:textSize="28sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/ip_field"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Port"
+                android:id="@+id/port_title"
+                android:layout_weight="1"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:textSize="28sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/port_field"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/set_ip_error"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#E57373" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CONFIRM"
+                android:id="@+id/set_ip_confirm_button"
+                android:layout_weight="1"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15sp"
+                android:textSize="25sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/set_ip_cancel_button"
+                android:layout_weight="1"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15sp"
+                android:textSize="25sp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>

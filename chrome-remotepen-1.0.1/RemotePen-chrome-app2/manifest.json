@@ -1,0 +1,24 @@
+{
+    "name": "CoastPen",
+    "description": "Chrome server for hand writing app",
+    "version": "0.1.1",
+    "manifest_version": 2,
+    "sockets": {
+      "tcp": {
+        "connect": "*"
+      },
+      "tcpServer": {
+        "listen": "*"
+      }
+    },
+    "permissions": [],
+    "app": {
+        "background": {
+            "scripts": [
+                "sha1.js",
+                "http.js",
+                "background.js"
+            ]
+        }
+    }
+}

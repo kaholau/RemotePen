@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hoho.remotepen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppStatusApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".TextInputActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TextHistoryActivity"
+            android:label="History"/>
+        <activity android:name=".TextBookmarkActivity"
+            android:label="Bookmark"/>
+        <activity android:name=".LoginActivity"
+            android:label="Login"/>
+        <activity android:name=".SetPasswordActivity"
+            android:label="Set Password"/>
+        <activity android:name=".SettingActivity"
+            android:label="Setting"/>
+        <activity android:name=".SetIPActivity"
+            android:label="Set IP"/>
+    </application>
+
+
+
+</manifest>
+
